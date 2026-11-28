@@ -1,6 +1,6 @@
-# Suno by Ace Data Cloud for Cursor
+# Suno for Cursor
 
-This independent **Suno by Ace Data Cloud** integration brings music, lyrics, audio edits and task retrieval into Cursor Agent. It is maintained by Ace Data Cloud, not an official plugin from the model brand or Cursor. The hosted MCP connection avoids running a local server; your service API token is entered once in Configure.
+This independent **Suno** integration brings music, lyrics, audio edits and task retrieval into Cursor Agent. It is maintained by Ace Data Cloud, not an official plugin from the model brand or Cursor. The hosted MCP connection avoids running a local server; your service API token is entered once in Configure.
 
 Generate Suno music in Cursor through the [Ace Data Cloud](https://platform.acedata.cloud?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=suno_cursor_shared_readme_platform_en) hosted MCP server. The plugin provides Suno's music, lyrics, audio editing, and task-query tools, plus a short skill for safe async use. The hosted tool schemas determine the available actions and models.
 
@@ -8,7 +8,7 @@ Generate Suno music in Cursor through the [Ace Data Cloud](https://platform.aced
 
 ## 1. Find the independent Suno plugin
 
-In [Cursor Marketplace](https://cursor.com/marketplace) or **Customize**, search for **Suno by Ace Data Cloud**. If the entry from **Ace Data Cloud Dev** is available, select **Install**.
+In [Cursor Marketplace](https://cursor.com/marketplace) or **Customize**, search for **Suno**. If the entry from **Ace Data Cloud Dev** is available, select **Install**.
 
 To load a standalone copy, download **Source code (zip)** from the [v1.0.1 release](https://github.com/AceDataCloud/SunoCursor/releases/tag/v1.0.1). Copy the contents of the extracted plugin folder, including its hidden `.cursor-plugin` directory, into `~/.cursor/plugins/local/suno/`. Run **Developer: Reload Window**. Local imports must be allowed. Use one copy in the editor to avoid duplicate tools. [Cursor local installation instructions](https://cursor.com/docs/plugins#test-plugins-locally)
 
@@ -30,7 +30,7 @@ Copy only the service token string: no `Bearer ` prefix, quotation marks or reda
 
 ## 3. Paste the token in Cursor Configure
 
-Open **Customize → Plugins → Suno by Ace Data Cloud → Configure** (older versions may show **Suno**). Paste the token in **Ace Data Cloud API token**, choose **Save**, wait for completion, then reopen Configure to confirm a masked value. Cursor substitutes `ACEDATACLOUD_API_TOKEN`; the plugin adds `Bearer ` and connects to its hosted HTTP MCP. No Python or Node server needs to be started. Reconnect if tools have not loaded.
+Open **Customize → Plugins → Suno → Configure** (older versions may show **Suno**). Paste the token in **Ace Data Cloud API token**, choose **Save**, wait for completion, then reopen Configure to confirm a masked value. Cursor substitutes `ACEDATACLOUD_API_TOKEN`; the plugin adds `Bearer ` and connects to its hosted HTTP MCP. No Python or Node server needs to be started. Reconnect if tools have not loaded.
 
 The Configure path and variable behavior follow the [official Cursor plugin reference](https://cursor.com/docs/reference/plugins#variables), checked **2026-10-18**. The screenshots below show Cursor’s tool approval and result views.
 
